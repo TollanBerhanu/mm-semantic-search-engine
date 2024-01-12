@@ -1,0 +1,17 @@
+__pycache__
+.venv
+venv
+.vscode
+environment.py
+
+chroma_db/
+db/
+sqlite/
+temp/
+shelve/
+
+.env
+sqlite.db
+shelve
+test
+test.*

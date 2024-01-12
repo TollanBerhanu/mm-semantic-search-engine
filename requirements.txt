@@ -1,0 +1,8 @@
+chromadb==0.4.12
+requests
+flask 
+flask-cors
+together
+langchain
+peewee
+python-dotenv

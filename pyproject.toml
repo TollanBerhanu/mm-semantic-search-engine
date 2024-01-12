@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic_search_engine"
+version = "0.0.1"
+authors = [
+  { name="Tollan Sitotaw", email="tollan.ititaw@singularitynet.io" },
+{ name="Kenenisa Alemayehu", email="kenenisa.Alemayehu@singularitynet.io"}
+]
+description = "A semantic search built with the llm Llama and Chroma DB for embedding"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/iCog-Labs-Dev/semantic-search-engine"
+"Bug Tracker" = "https://github.com/iCog-Labs-Dev/semantic-search-engine/issues"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
