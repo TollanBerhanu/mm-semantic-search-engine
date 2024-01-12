@@ -2,11 +2,11 @@ import os
 from flask import Flask, request
 from flask_cors import CORS
 
-from routes.root_route import root_bp
-from routes.sync_route import sync_bp
-from routes.search_route import search_bp
-from routes.settings_route import settings_bp
-from routes.slack_route import slack_bp
+# from routes.root_route import root_bp
+# from routes.sync_route import sync_bp
+# from routes.search_route import search_bp
+# from routes.settings_route import settings_bp
+# from routes.slack_route import slack_bp
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -23,11 +23,11 @@ CORS(app=app,
 # app.config['SESSION_COOKIE_SAMESITE'] = 'None'
 # app.config['SESSION_COOKIE_SECURE'] = True
 
-app.register_blueprint(root_bp, url_prefix="/root")
-app.register_blueprint(sync_bp, url_prefix="/sync")
-app.register_blueprint(search_bp, url_prefix="/search")
-app.register_blueprint(settings_bp, url_prefix="/settings")
-app.register_blueprint(slack_bp, url_prefix="/slack")
+# app.register_blueprint(root_bp, url_prefix="/root")
+# app.register_blueprint(sync_bp, url_prefix="/sync")
+# app.register_blueprint(search_bp, url_prefix="/search")
+# app.register_blueprint(settings_bp, url_prefix="/settings")
+# app.register_blueprint(slack_bp, url_prefix="/slack")
 
 import json
 
